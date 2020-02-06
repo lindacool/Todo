@@ -1,20 +1,25 @@
 body {
   background-color: pink;
-  text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-  body input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 200px; }
-  body button {
-    padding: 10px;
-    border-radius: 5px;
-    border: none; }
-  body a {
-    background-color: white;
-    padding: 7px;
-    color: black;
-    border-radius: 5px; }
-  body #ontodo {
-    margin: 20px; }
+  body #container {
+    text-align: center; }
+    body #container input {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      width: 200px; }
+    body #container button {
+      padding: 10px;
+      border-radius: 5px;
+      border: none; }
+    body #container #box {
+      margin-top: 20px; }
+      body #container #box a {
+        background-color: white;
+        padding: 7px;
+        color: black;
+        border-radius: 5px; }
+      body #container #box #ontodo {
+        margin-bottom: 10px;
+        width: 200px;
+        display: inline-block; }

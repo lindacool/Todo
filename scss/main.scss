@@ -1,7 +1,8 @@
 body{
     background-color: pink;
-    text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#container{
+    text-align: center;
 
     input{
         padding: 10px;
@@ -15,16 +16,25 @@ body{
         border:none;
 
     }
+    #box{
+        margin-top: 20px;
 
-    a{
-        background-color: white;
-        padding: 7px;
-        color:black;
-        border-radius: 5px;
+        a{
+            background-color: white;
+            padding: 7px;
+            color:black;
+            border-radius: 5px;
+        }
+    
+        #ontodo{
+            margin-bottom: 10px;
+            width: 200px;
+            display: inline-block;
+        }
+
     }
+    
 
-    #ontodo{
-        margin: 20px;
-    }
-
+}
+   
 }
