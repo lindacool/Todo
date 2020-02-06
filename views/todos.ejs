@@ -11,9 +11,8 @@
     <% findAllTodos.forEach( (oneTodo)=>{ %>
         <div id=box>
         <span id="ontodo"><%= oneTodo.text%></span>
-            <a href="/edit/<%= oneTodo._id%>">Update</a>
-            <a href="/delete/<%= oneTodo._id%>">Delete</a>
-
+            <a href="/edit/<%= oneTodo._id%>"><i class="fas fa-pen"></i></a>
+            <a href="/delete/<%= oneTodo._id%>"><i class="fas fa-trash"></i></i></a>
         </div>
     <% }); %>
 </div>   

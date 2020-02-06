@@ -5,12 +5,13 @@ const path = require ("path");
 const mongoose = require("mongoose");
 
 const app = express(); // Anropar express
-
+// för att kunna läsa data som POST till datbasen. Datan är URL-kodad  
+app.use(express.urlencoded({extended:true})); 
 // För att få css
-app.use(express.static(path.join(__dirname+'/public')));
+app.use(express.static(path.join(__dirname, "/public")));
 
 
-app.use(express.urlencoded({extended:true}));  // för att kunna läsa data som POST till datbasen. Datan är URL-kodad  
+ 
 app.set("view engine","ejs"); //Aktivera views. Den ska läsa av views-mappen läs den med ejs. 
 app.use(router); // För att kunna routa. 
 

@@ -1,19 +1,28 @@
 body {
-  background-color: pink;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: url(/crushing-wave-near-norwegian-shore-picjumbo-com.jpg);
+  background-size: cover; }
   body #container {
-    text-align: center; }
+    text-align: center;
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 0px 0px 10px black; }
+    body #container h1 {
+      padding-top: 20px; }
     body #container input {
       padding: 10px;
-      border-radius: 5px;
+      width: 150px;
       border: none;
-      width: 200px; }
+      border-bottom: solid black 1px; }
     body #container button {
+      margin-left: 20px;
       padding: 10px;
-      border-radius: 5px;
-      border: none; }
+      border-radius: 5px; }
     body #container #box {
-      margin-top: 20px; }
+      margin-top: 20px;
+      margin-bottom: 10px; }
       body #container #box a {
         background-color: white;
         padding: 7px;
