@@ -1,0 +1,30 @@
+body{
+    background-color: pink;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    input{
+        padding: 10px;
+        border-radius: 5px;
+        border:none;
+        width: 200px;
+    }
+    button{
+        padding: 10px;
+        border-radius: 5px;
+        border:none;
+
+    }
+
+    a{
+        background-color: white;
+        padding: 7px;
+        color:black;
+        border-radius: 5px;
+    }
+
+    #ontodo{
+        margin: 20px;
+    }
+
+}

@@ -1,0 +1,19 @@
+<%- include("header.ejs")%>
+
+<body>
+    <h1>My todo</h1>
+    <form action="/todolist" method="POST">
+        <input type="text" name="text" placeholder="My new todo" id="input">
+        <button type="submit">Lägg till</button>
+    </form>
+    <!--Loopa igenom findAllTodos -->
+    <% findAllTodos.forEach( (oneTodo)=>{ %>
+        <div>
+        <span id="ontodo"><%= oneTodo.text%></span>
+        <a href="/edit/<%= oneTodo._id%>">Update</a>
+        <a href="/delete/<%= oneTodo._id%>">Delete</a>
+        </div>
+    <% }); %>
+    
+</body>
+</html>

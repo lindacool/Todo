@@ -1,0 +1,10 @@
+<%- include("header.ejs")%>
+
+    <h1>My todo</h1>
+    <form action="/edit/:id" method="post">
+        <input type="text" name="text" value="<%=response.text%>">
+        <input type="text" name="_id" value="<%=response._id%>" hidden>
+        <button type="submit">Update</button>
+    </form>
+
+
