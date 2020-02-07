@@ -1,12 +1,12 @@
 <%- include("header.ejs")%>
 
     <div id="container">
-    <h1>Edit my toto:</h1>
+    <h1>Ändra min toto:</h1>
     <div id=box>
     <form action="/edit/:id" method="post">
         <input type="text" name="text" value="<%=response.text%>">
         <input type="text" name="_id" value="<%=response._id%>" hidden>
-        <button type="submit">Update</button>
+        <button type="submit">Uppdatera</button>
     </form>
     </div>
     </div>
