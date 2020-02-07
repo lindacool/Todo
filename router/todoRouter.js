@@ -3,21 +3,33 @@ const newTodos = require("../model/newtodos");
 
 const router = express.Router(); 
 
+const item = 3; 
+
 router.route("/todolist")
 
 .get(async(req,res)=> {
+    const sort = req.query.sort;
+    const page = req.query.page;
     // Hitta alla dok i databasen. De kommer soteras i bokstavsordnig
-    const findAllTodos = await newTodos.find().sort({text:1});
+    const findAllTodos = await newTodos.find().skip((page-1) *item ).limit(5).sort({text:sort});
     // Rendera todos.ejs och skicka in objektet findAllTodos som innehåller alla newtodos sin finns sparade på databasen. 
     res.render("todos", {findAllTodos}); 
 })
 
+
 .post(async(req,res)=>{
     await new newTodos(
-        {text: req.body.text}).save();
-    res.redirect("/todolist");  // denna behövs ej om vi är i samma. 
+        {text: req.body.text}).save((error,success)=>{
+            if(error){
+                res.send(error.message)
+            }
+            else
+           res.redirect("/todolist")
+        })
+                
+    res.redirect("/todolist");
+
 });
-// VI skapar ett nytt doc i databasen genom modellen som vi skapat(comment.js)där tar vi tar använders input som värde. pch vi sparar i databasen genom .save() res.redirect fär att skicka inupt till samma sida som vi är på. 
 
 router.get("/delete/:id", async(req,res)=>{
     await newTodos.deleteOne({_id:req.params.id})
