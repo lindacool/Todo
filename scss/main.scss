@@ -1,69 +1,71 @@
-body{
-    // background-color: pink;
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url(/crushing-wave-near-norwegian-shore-picjumbo-com.jpg);
     background-size: cover;
 
-#container{
-    text-align: center;
-    width: 50%; 
-    background-color: white;
-    border-radius: 5px;
-    margin: auto;
-    box-shadow: 0px 0px 10px black;
-    padding-bottom: 10px;
-  
-    h1{
-        padding-top: 20px;
-    }
-
-    input{
-        margin-top: 15px;
-        padding: 10px;
-        // padding-left: 1px;
-        width: 150px;
-        border:none;
-        border-bottom: solid black 1px;
-        align-content: left;
-    }
-    button{
-        margin-left: 30px;
-        padding: 7px;
+    #container {
+        text-align: center;
+        width: 50%;
+        background-color: white;
         border-radius: 5px;
-        border: solid black 1px;
+        margin: auto;
+        box-shadow: 0px 0px 10px black;
+        padding-bottom: 10px;
 
-    }
-    #box{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        
-        a{
-            background-color: white;
+        h1 {
+            padding-top: 20px;
+        }
+
+        input {
+            margin-top: 15px;
+            padding: 10px;
+            width: 150px;
+            border: none;
+            border-bottom: solid black 1px;
+            align-content: left;
+        }
+
+        button {
+            margin-left: 30px;
             padding: 7px;
-            color:black;
             border-radius: 5px;
-        }
-    
-        #onetodo{
-            margin-bottom: 10px;
-            width: 200px;
-            display: inline-block;
-            text-align: left;
-        }
-    
-    }
-    .sort{
-        font-size: 12px;
-    }
-    a{
-        text-decoration:none;
-        color: black;
-    }   
-    a:hover {
-        color:lightblue;
-        // text-decoration:underline;
-      }
+            border: solid black 1px;
 
-}
-   
+        }
+
+        #box {
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            a {
+                background-color: white;
+                padding: 7px;
+                color: black;
+                border-radius: 5px;
+            }
+
+            #onetodo {
+                margin-bottom: 10px;
+                width: 200px;
+                display: inline-block;
+                text-align: left;
+            }
+
+        }
+
+        .sort {
+            font-size: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: lightblue;
+        }
+
+    }
+
 }

@@ -1,27 +1,28 @@
 <%- include("header.ejs")%>
 
 <body>
-<div id="container">
-    <h1>Min todo</h1>
-    <a class="sort" href="/todolist/?sort=1">Sotera A-Ö &nbsp<i class="fas fa-sort"></i></a> &nbsp
-    <a class="sort" href="/todolist/?sort=-1">Sotera Ö-A &nbsp<i class="fas fa-sort"></i></a>
+    <div id="container">
+        <h1>Min todo</h1>
+        <a class="sort" href="/todolist/?sort=1">Sortera A-Ö &nbsp<i class="fas fa-sort"></i></a> &nbsp
+        <a class="sort" href="/todolist/?sort=-1">Sortera Ö-A &nbsp<i class="fas fa-sort"></i></a>
 
-    <form action="/todolist" method="POST">
-        <input type="text" name="text" placeholder="Min todo" id="input">
-        <button type="submit">Lägg till</button>
-    </form>
-    <!--Loopa igenom findAllTodos -->
-    <% findAllTodos.forEach( (oneTodo)=>{ %>
+        <form action="/todolist" method="POST">
+            <input type="text" name="text" placeholder="Min todo" id="input">
+            <button type="submit">Lägg till</button>
+        </form>
+        <!--Loopa igenom findAllTodos -->
+        <% findAllTodos.forEach( (oneTodo)=>{ %>
         <div id=box>
-        <span id="onetodo"><%= oneTodo.text%></span>
+            <span id="onetodo"><%= oneTodo.text%></span>
             <a href="/edit/<%= oneTodo._id%>"><i class="fas fa-pen"></i></a>
             <a href="/delete/<%= oneTodo._id%>"><i class="fas fa-trash"></i></i></a>
         </div>
-    <% }); %>
-    <a class="number" href="/todolist/?page=1"><i class="fas fa-angle-left"></i>&nbsp 1</a>
-    <a class="number" href="/todolist/?page=2">2 &nbsp<i class="fas fa-angle-right"></i></a>
-</div>   
+        <% }); %>
+        <a class="number" href="/todolist/?page=1"><i class="fas fa-angle-left"></i>&nbsp 1</a>
+        <a class="number" href="/todolist/?page=2">2 &nbsp<i class="fas fa-angle-right"></i></a>
+    </div>
 
-    
+    <button><a href="/todolist/about">About</a></button>
 </body>
+
 </html>
